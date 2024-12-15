@@ -7,8 +7,8 @@ const datosOs = () => {
         Versión: os.version(),
         Arquitectura: os.arch(),
         CPUs: os.cpus().length,
-        MemoriaTotal: `${(os.totalmem() / (1024 * 1024)).toFixed(3)} MB`,
-        MemoriaLibre: `${(os.freemem() / (1024 * 1024)).toFixed(3)} MB`,
+        MemoriaTotal: `${(os.totalmem() / 1048576).toFixed(3)} MB`,
+        MemoriaLibre: `${(os.freemem() / 1048576).toFixed(3)} MB`,
     };
 }; 
 
